@@ -1,0 +1,48 @@
+{
+  "name": "return-prevention-skill",
+  "version": "1.0.0",
+  "description": "Predict return risk for individual orders and generate proactive interventions to prevent returns before they happen.",
+  "author": "alphaparkinc",
+  "category": "operations",
+  "tags": [
+    "returns",
+    "prevention",
+    "risk-scoring",
+    "post-purchase",
+    "retention"
+  ],
+  "inputs": {
+    "order": {
+      "type": "object",
+      "description": "Order details: order_id, product_category, order_value, days_since_purchase, shipping_days, customer_segment."
+    },
+    "customer": {
+      "type": "object",
+      "description": "Customer history: past_returns, past_orders, return_rate, satisfaction_score."
+    },
+    "product": {
+      "type": "object",
+      "description": "Product attributes: size_sensitive, fragile, high_price, new_product, complex_setup."
+    }
+  },
+  "outputs": {
+    "return_risk_score": {
+      "type": "number",
+      "description": "Return risk score 0-100."
+    },
+    "risk_tier": {
+      "type": "string",
+      "description": "Critical / High / Medium / Low."
+    },
+    "risk_factors": {
+      "type": "array",
+      "description": "Identified risk factors driving the score."
+    },
+    "interventions": {
+      "type": "array",
+      "description": "Proactive interventions to prevent return."
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
