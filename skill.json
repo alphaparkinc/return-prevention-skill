@@ -1,8 +1,8 @@
 {
   "name": "return-prevention-skill",
   "version": "1.0.0",
-  "description": "Predict return risk for individual orders and generate proactive interventions to prevent returns before they happen.",
-  "author": "alphaparkinc",
+  "description": "GenPark AI Agent Skill - Predict return risk for individual orders and generate proactive interventions to prevent returns before they happen.",
+  "author": "genpark",
   "category": "operations",
   "tags": [
     "returns",
