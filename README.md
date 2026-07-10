@@ -1,4 +1,4 @@
-# return-prevention-skill
+# genpark-return-prevention-skill
 
 > **GenPark AI Agent Skill** -- Predict order return risk and generate proactive interventions to prevent returns before they happen.
 
